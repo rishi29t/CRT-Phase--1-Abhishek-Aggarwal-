@@ -1,0 +1,64 @@
+BASIC CODING
+
+Q1.Celcius into Ferhanite 
+#include <iostream>
+using namespace std;
+int main(){
+double celcius , fahrenheit; 
+cin>>celcius;
+fahrenheit=(celcius * 9.0/5.0) + 32;
+cout<< fahrenheit<<endl;
+return 0;
+}
+
+Q2.Local & Global variables
+#include <iostream>
+using namespace std;
+int globalvariable=100;
+int main(){
+int localvariable;
+cin>> localvariable;
+int result;
+result =(globalvariable/localvariable);
+cout<<result<<endl;
+return 0;
+}
+
+Q3.Equaliletral Triangle and their sides.
+#include <iostream>
+using namespace std;
+int main(){
+int s1,s2,s3;
+cin>>s1>>s2>>s3;
+bool isEqui= (s1>0)&&(s1=s2)&& (s2=s3);
+cout<<isEqui<<endl;
+return 0;
+}
+
+Q4.Swap of 2 numbers without if & else , using 3 variable
+#include<iostream>
+using namespace std;
+int main () ; {
+int a , b; 
+cin >> a>> b ; 
+// logic is to swap variable values 
+int temp = a; 
+a=b; 
+b=temp; 
+cout<<a<<“\n”<<b<< endl;
+return 0 ; 
+}
+
+Q5.User-Name & Password default and check them by user input.
+#include <iostream>
+using namespace std;
+int main(){
+int userid= 1234;
+int userpw= 0000;
+int inputid, inputpw;
+cin>>inputid>>inputpw;
+bool isGranted=(userid== inputid) && (userpw==inputpw);
+cout<<“Access Granted””<<isGranted<<endl;
+cout<<“Access Denied””<<!isGranted<<endl;
+return 0;
+}
