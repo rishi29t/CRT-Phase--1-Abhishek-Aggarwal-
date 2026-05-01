@@ -56,3 +56,20 @@ int main() {
 
 }
 
+//problem 4 Using turnary operator.
+#include <iostream>
+using namespace std;
+
+int main(){
+    int a,b;
+    int max_number;
+    cout<<"enter 1 number-";
+    cin>>a;
+    cout<<"enter 2 number-";
+    cin>>b;
+    //Logic for tunary operator 
+    max_number=(a>b)? a:b;
+    cout<<"greater number:"<<max_number;
+    return 0;
+}
+
