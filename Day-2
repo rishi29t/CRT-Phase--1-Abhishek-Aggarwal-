@@ -115,3 +115,37 @@ int main(){
     }
 }
 
+//problem 6 
+//customer support IVR system
+// 1 -- for support 
+// 2-- billing
+// 3-- technical issue 
+// 4-- Agent talk
+#include<iostream>
+using namespace std;
+int main(){
+    int choice;
+    cin >> choice;
+    
+    switch(choice){
+        
+        case 1: 
+        cout<<"Trasnfering call to the support team";
+        break;
+        
+        case 2:
+        cout<<"trasnfering call to the billling and account department";
+        break;
+        
+        case 3:
+        cout<<"Connecting call to the technical team";
+        break;
+        
+        case 4:
+        cout<<"Please wait we're connecting your call to A Agent";
+        break;
+        default:
+        cout<<"enter a valid choice";
+        
+    }
+}
