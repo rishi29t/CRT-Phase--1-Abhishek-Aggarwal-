@@ -50,6 +50,7 @@ Q5.
 //     while(i<=10);
 //}
 
+
 Q6.
 //Factorial of  a number 
 // int main(){
@@ -61,3 +62,46 @@ Q6.
 //     cout<<fact<<" "; 
 // }
 
+
+Q7.
+//Prime number or not using boolean variables
+#include <iostream>
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    bool isPrime=true;
+    
+    if(n<2){
+        isPrime=false;
+    }else{
+        for (int i=2;i<n;i++){
+            if(n%i==0){
+                isPrime=false;
+                break;
+            }
+        }
+    }
+if(isPrime){
+    cout<<"It is a prime number";
+}else{
+    cout<<"It is not a prime number";
+    }
+}
+
+
+Q8.
+//Smart phone Unlock
+#include <iostream>
+using namespace std;
+int main(){
+    int password;
+    
+    do{
+        cout<<"Enter your password here....";
+        cin>>password;
+    }while(password != 1234);{
+        cout<<"Phone Unlocked...";
+    }
+    
+}
