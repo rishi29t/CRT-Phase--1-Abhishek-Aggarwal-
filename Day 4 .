@@ -1,0 +1,77 @@
+// Nested Looping Techniques...
+// Pattern solving questions...
+Pattern:-
+// 1 2 3 4 5 
+// 1 2 3 4 5 
+// 1 2 3 4 5 
+// 1 2 3 4 5 
+// 1 2 3 4 5
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    for(int i=1;i<=5;i++){
+        for(int j=1;j<=5;j++){
+        cout<<j;
+    }
+    cout<<"\n";
+    }
+}
+ Problem 2 :- 
+
+Pattern :- 
+// * * *
+// * * *
+// * * * 
+
+// int main(){
+//     int n;
+//     cin>>n;
+//     for(int i=1;i<=n;i++){
+//         for(int j=1;j<=n;j++){
+//         cout<<" * ";
+//     }
+//     cout<<"\n";
+//     }
+// }
+
+//Problem 3 Pattern Rectangle :- 
+// * * * * *
+// * * * * *
+// * * * * * 
+
+// int main(){
+//     int row,col;
+//     cout<<"enter rows :";
+//     cin>>row;
+//     cout<<"enter column :";
+//     cin>>col;
+//     for(int i=1;i<=row;i++){
+//         for(int j=1;j<=col;j++){
+//         cout<<" * ";
+//     }
+//     cout<<"\n";
+//     }
+// }
+
+// Problem 4 pattern Triangle( Right angle ) :- 
+// *
+// * *
+// * * * 
+// * * * *
+// * * * * *
+
+//int main(){
+//    int row,col;
+//    cout<<"enter rows :";// number of rows it will print .
+//   cin>>row;
+//    cout<<"enter column :";// number of columns it will print 
+//    cin>>col;
+//    for(int i=1;i<=row;i++){    // i=1 starting , i<=row no of rows we take input , iteration .
+//        for(int j=1;j<=i;j++){  // j=1 , j<=i which is 1 , iteration .
+//        cout<<" * ";
+//    }
+//    cout<<"\n";
+//    }
+//}
