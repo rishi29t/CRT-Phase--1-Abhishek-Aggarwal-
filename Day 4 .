@@ -151,3 +151,29 @@ int main(){
     }
 }
 
+Problem 8
+// Pattern :
+
+// * * * * * *
+// *         * 
+// *         *
+// * * * * * *
+
+int main(){
+	int n,col;
+	cout<<"enter rows :";// number of rows it will print .
+	cin>>n;
+	cout<<"enter column:";
+	cin>>col;
+	for(int i=1;i<=n;i++){
+	    for(int j=1;j<=col;j++){
+	        cout<<" ";
+	        if(i==1 || i==n || j==1 || j==col){ // we using OR condition here. 
+	        cout<<"*";
+	        }else{
+	            cout<<" ";
+	        }
+	    }
+	    cout<<"\n";
+	}
+}
