@@ -1,25 +1,25 @@
-// Nested Looping Techniques...
-// Pattern solving questions...
-Pattern:-
+                                                                                                  Nested Looping Techniques...
+
+Problem :- 1 
+Pattern:- 
 // 1 2 3 4 5 
 // 1 2 3 4 5 
 // 1 2 3 4 5 
 // 1 2 3 4 5 
 // 1 2 3 4 5
 
-#include<iostream>
-using namespace std;
+//#include<iostream>
+//using namespace std;
+//int main(){
+//   for(int i=1;i<=5;i++){
+//        for(int j=1;j<=5;j++){
+//        cout<<j;
+//    }
+//    cout<<"\n";
+//    }
+//}
 
-int main(){
-    for(int i=1;i<=5;i++){
-        for(int j=1;j<=5;j++){
-        cout<<j;
-    }
-    cout<<"\n";
-    }
-}
- Problem 2 :- 
-
+Problem 2 :- 
 Pattern :- 
 // * * *
 // * * *
@@ -36,7 +36,8 @@ Pattern :-
 //     }
 // }
 
-//Problem 3 Pattern Rectangle :- 
+//Problem 3 ( * )Rectangle :- 
+Pattern -
 // * * * * *
 // * * * * *
 // * * * * * 
@@ -55,7 +56,8 @@ Pattern :-
 //     }
 // }
 
-// Problem 4 pattern Triangle( Right angle ) :- 
+// Problem 4  Triangle( Right angle ) :- 
+Patternn
 // *
 // * *
 // * * * 
@@ -75,3 +77,28 @@ Pattern :-
 //    cout<<"\n";
 //    }
 //}
+
+// Problem 5 Holloow Square. 
+Pattern :-
+// * * * * *
+// *       *
+// *       *
+// *       * 
+// * * * * * 
+
+int main(){
+	int n;
+	cout<<"enter rows :";// number of rows it will print .
+	cin>>n;
+	for(int i=1;i<=n;i++){
+	    for(int j=1;j<=n;j++){
+	        cout<<" ";
+	        if(i==1 || i==n || j==1 || j==n){ // we using OR condition here. 
+	        cout<<"*";
+	        }else{
+	            cout<<" ";
+	        }
+	    }
+	    cout<<"\n";
+	}
+}
