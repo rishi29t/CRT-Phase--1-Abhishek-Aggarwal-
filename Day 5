@@ -1,0 +1,60 @@
+#include <iostream>
+using namespace std;
+// Function making practice
+
+//1-No Arguement No Return type. 
+// void printMessage(){
+//     cout<<"we're learning functions ..";
+//     }
+// int main(){
+//     //Funcation calling.
+//     printMessage();
+//     return 0;
+// }
+
+//2-Arguement & no return type. Function with some values .
+// int calculArea(int l,int b){ // function decleared with arguements.
+//     return l*b ;// return the arguement 
+// }
+// int main(){// main body 
+//     int l,b,res;// decleared variable 
+//     cout<<"enter length ";
+//     cin>>l;
+//     cout<<"enter breath ";
+//     cin>>b;
+//     calculArea(l,b);// fucnction working
+//     res=b*l;
+//     cout<<res;
+//     }
+
+//3- types of functions no arguement no return type and no arguements. same as 1 .
+// void Bellring(){ // no arguement is passed here .! 
+//     cout<<"ting tong ";
+// }
+// int main(){
+//     Bellring();
+    
+// }
+
+// 4-Arguement with no return type.
+ //4     //3      //5
+// void sendMessage(string message){
+//     cout<<message;
+//         //6 //10
+// }
+//     //7
+// int main(){ // 1
+//     //2
+//     sendMessage("Bjp won in bengal ");
+//         //8         //9 
+// }
+
+//5 - No arguement with Return Value ;
+
+int ticketnumber(){
+    return 101;
+}
+int main(){
+    cout<<ticketnumber();
+    
+}
