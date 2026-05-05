@@ -58,3 +58,13 @@ int main(){
     cout<<ticketnumber();
     
 }
+//6 Convert rupe100 into 1 dollar through function.
+
+// int currency(int rupe){
+//     cout<<"conversion ";
+//     return rupe/100;
+// }
+// int main(){
+//     int rupe=100;
+//     cout<<currency;
+// }
