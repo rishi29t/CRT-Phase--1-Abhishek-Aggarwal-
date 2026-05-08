@@ -107,7 +107,7 @@ int main(){
 //    }
 //};
 //
-//class child : virtual public Parent1,virtual public Parent2{
+//class child :  public Parent1, public Parent2{
 //    // no logic here 
 //};
 //
