@@ -140,3 +140,31 @@ int main(){
 //     D obj1;
 //     obj1.print();
 // }
+
+2. 
+                                                                                                    E n c a p s l a t i o n
+// it involves set and get function .
+
+class BankAccount{
+private:
+    int bankBalance;
+public:
+    void setBalance(int amount ){
+        if(amount>=0){
+            bankBalance=amount;
+        }
+        else{
+            cout<<"enter a valid amount it cant be Zero .."<<"\n";
+        }
+    }
+        int getBalance(){
+            return bankBalance;
+        }
+};
+
+int main(){
+    BankAccount obj1;
+    obj1.setBalance(5000);
+    cout<<obj1.getBalance();
+    
+}
