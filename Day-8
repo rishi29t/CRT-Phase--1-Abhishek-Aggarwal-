@@ -91,3 +91,52 @@ int main(){
     b.drive();
     
 }
+
+//1.4 Multiple inheritance //Ambiguity problem causing error .
+//class Parent1 {
+//public:
+//   void paiseDoMummy(){
+//        cout<<"mummy paise de do bhar jana hai .. "<<"\n";
+//    } 
+};
+//
+//class Parent2{
+//public:
+//   void paiseDopapa(){
+//        cout<<"papa paise do book lani h .. "<<"\n";
+//    }
+//};
+//
+//class child : virtual public Parent1,virtual public Parent2{
+//    // no logic here 
+//};
+//
+//int main(){
+//    child obj1;
+//    obj1.paiseDoMummy();
+//    obj1.paiseDopapa();
+//}
+
+// class A{
+// public:
+//     void print(){
+//         cout<<"hi there .. ";
+//     }
+// };
+
+// class B : virtual public A{
+//     // no logic 
+// };
+
+// // Abhi se upper tak Hierarchical inheritance chlra h ab iske niche se multiple chlega. 
+// class C : virtual public A{
+//     // no logic 
+// };
+
+// class D : public B, public C{
+// };
+
+// int main(){
+//     D obj1;
+//     obj1.print();
+// }
