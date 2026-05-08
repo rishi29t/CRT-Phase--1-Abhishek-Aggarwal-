@@ -1,0 +1,60 @@
+                                                                                                    I N H E R I T A N C E 
+#include <iostream>
+using namespace std;
+
+// Problem 1
+// Types of inheritance 
+// 1.1 Single Level inheritance
+
+// class Vehicle{
+// public:
+//     void start (){
+//         cout<<"Vehicle Starts."<<"\n";
+//     }
+    
+// };
+// class Car: public Vehicle{
+// public:
+//     void drive(){
+//         cout<<"car is running ."<<"\n";
+//     }
+// };
+    
+// int main()
+// {
+//     Car obj1;// object created from class name  
+//     obj1.drive();// object create and fucntion called 
+//     obj1.start();
+// }
+
+// Problem 1
+// Types of inheritance 
+// 1.2  Multi-level inheritance
+
+class Vehicle{// 1-Grand Parent class
+public:
+    void start (){
+        cout<<"Vehicle Starts."<<"\n";
+    }
+    
+};
+class Car: public Vehicle{// 2-Parent class
+public:
+    void drive(){
+        cout<<"car is running ."<<"\n";
+    }
+};
+class SpeedOmeter : public Car{ //Child class 
+public:
+    void speed(){
+        cout<<"Speed of the car is 60km/h"<<"\n";
+    }    
+};
+
+int main()
+{
+    SpeedOmeter obj1;// object banaya yaha sab se end wli child class ka   
+    obj1.drive();// object name se function call kiya  
+    obj1.start();
+    obj1.speed();
+}
