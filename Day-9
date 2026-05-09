@@ -1,1 +1,46 @@
+Function over riding .
 
+#include <iostream>
+using namespace std;
+//Function overriding 
+class Appliance{ //Parent class created 
+public:
+    virtual void turnOn(){
+        cout<<"Appliance is On ";
+}
+    
+    virtual void work()=0;// we make this function virtual because it is not returning anything .
+    
+};
+class Fan : public Appliance{ // inheritance krdia 
+public:
+    void turnOn() override {// override isliyeh likha taki vo turn on wle ka cout ko overWrite krde means override 
+        cout<<"Fan plates are rotating slowly ."<<"\n";
+        }
+        void work(){
+            cout<<"Once fan at full speed it will give full air ."<<"\n";
+        }
+
+};
+
+class Toaster : public Appliance{
+public:
+     void work(){
+            cout<<"& Toaster is heating breads ."<<"\n";
+        }
+};
+
+int main(){
+    //Fan 
+    Fan myFan;
+    Appliance *kitchenapp;
+    kitchenapp = &myFan;
+    kitchenapp->turnOn();
+    kitchenapp->work();
+  // Toaster   
+    Toaster myToast;
+    kitchenapp = &myToast;
+    kitchenapp->turnOn();
+    kitchenapp->work();
+}
+//here we have not called function with object here we called function in a pointer and then we called pointer .
