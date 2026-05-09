@@ -65,12 +65,15 @@ int main(){
     cout<<sum;
 }
 
+// Linear Search : It goes from starting to ending and search every position weather our value is present there or not.
 int main(){
     int arr[5]={10,20,30,40,50};
     // now we check a specific data is present there or not 
     int searchElement;
     cout<<"Enter element to search =";
     cin>>searchElement;
+    // loop to traverse . 
+    
     for(int i=0 ; i<5 ;i++){
         if(arr[i]==searchElement){
             cout<<"element found at index = "<<i;
