@@ -1,1 +1,58 @@
+                                                          2-D Array 
+#include <iostream>
+using namespace std;
+//Problem-1 
+// 2-D Array Making .
+// int main(){
+//     int arr[2][2];
+    
+//     for(int i=0;i<2;i++){
+//         for(int j=0;j<2;j++){
+//             cin>> arr[i][j];
+//         }
+//     }
+    
+//     cout<<"here is your 2 d array: ";
+//     for(int i=0;i<2;i++){
+//         for(int j=0;j<2;j++){
+//             cout<<arr[i][j]<<" ";
+//         }
+//          cout<<"\n";
+//     }
+//     return 0;
+// }
 
+// // Sum of 2 d array 
+// int main(){
+//     int arr[2][2];
+//     int sum=0;
+    
+//     for(int i=0;i<2;i++){
+//         for(int j=0;j<2;j++){
+//             cin>> arr[i][j];
+//             sum=sum+arr[i][j];
+//     }
+// }   cout<<"\n";
+//     cout<<sum;
+// }
+
+// Searh Element in 2D array .  
+// int main(){
+//     int arr[2][2]={{10,20},{30,40}};
+//     // now we check a specific data is present there or not 
+//     int searchElement;
+//     cout<<"Enter element to search =";
+//     cin>>searchElement;
+//     // loop to traverse . 
+    
+//     for(int i=0 ; i<2 ;i++){
+//         for(int j=0;j<2;j++){
+//             if(arr[i][j]==searchElement){
+//                 cout<< i <<","<< j;
+//             return 0;
+//         }
+//         }
+//         }
+        
+//     cout<<"element not found..";
+// }
