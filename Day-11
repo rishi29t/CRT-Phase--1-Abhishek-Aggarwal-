@@ -1,1 +1,58 @@
                                                                                                 L E E T - C O D E  
+			LeetCode - String Questions 
+
+//Rotate Array - 189 
+
+class Solution {
+public:
+    void reverse(vector<int>&nums,int start,int end){
+        while(start < end){
+        swap(nums[start], nums[end]);
+        start++;
+        end--;
+    }
+    }
+    void rotate(vector<int>& nums, int k) {
+        int n=nums.size();
+        k= k%n ;
+        reverse(nums, 0, n-1); //Rotate complete array 
+        reverse(nums, 0, k-1); // Rotate first k elements
+        reverse(nums, k, n-1); // Rotate rest of the element 
+        
+    }
+};
+
+// Reverse String - 344
+class Solution {
+public:
+    void reverse(vector<char>& s,int start ,int end) {
+
+        while(start < end){
+        swap(s[start], s[end]);
+        start++;
+        end--;
+    }
+ }
+
+    void reverseString(vector<char>& s){
+        int n= s.size();
+        reverse(s, 0, n-1); //Rotate complete array  
+        
+    }
+};
+
+Problem 3- 795
+
+class Solution {
+public:
+    bool rotateString(string s, string goal) {
+        if(s.size() != goal.size()){
+            return false;
+        }
+
+        string doubleString = s + s;
+        return doubleString.contains(goal);
+     
+
+    }
+};
