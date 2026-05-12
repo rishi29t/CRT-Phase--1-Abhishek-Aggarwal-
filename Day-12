@@ -47,3 +47,23 @@ int main(){
     
     return 0;
 }
+
+//Fibonacci Series 
+
+int fibo(int n){
+    
+    //Base 
+    if(n == 0){
+        return 0;
+    }
+    if(n == 1){
+        return 1;
+    }
+    
+    //Logic 
+    return fibo(n-1)+fibo(n-2);
+}
+int main(){
+    cout<<fibo(4);
+
+}
