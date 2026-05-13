@@ -22,3 +22,28 @@ int main(){
     cout<<fibo(n);
 
 }
+
+// Tile Problem :- 
+
+#include<iostream>
+using namespace std;
+int tile(int n){
+    
+    //Base 
+    if(n == 0){
+        return 1;
+    }
+    if(n == 1 || n==2 ||n==3){
+        return 1;
+    }
+    
+    //Logic 
+    return tile(n-4)+tile(n-1);
+}
+int main(){
+    int n;
+    cout<<"enter number= ";
+    cin>>n;
+    cout<<tile(n);
+
+}
