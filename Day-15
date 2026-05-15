@@ -1,3 +1,4 @@
+                                                                                                     S T A C K 
 #include<iostream>
 #include <stack>
 using namespace std;
@@ -27,7 +28,8 @@ int main(){
     return 0;
 }
 
-Reverse string with the help of Stack 
+
+                                                                                        Reverse string with the help of Stack 
 class Solution {
 public:
     void reverseString(vector<char>& s) {
@@ -42,7 +44,7 @@ public:
     }
 };
 
-Valid Parentheses .
+                                                                                                Valid Parentheses .
 
 class Solution {
 public:
@@ -68,7 +70,7 @@ public:
     };
 
 
-Next Greater Element
+                                                                                                    Next Greater Element
 class Solution {
   public:
     vector<int> nextLargerElement(vector<int>& arr) {
