@@ -1,0 +1,28 @@
+#include<iostream>
+#include <stack>
+using namespace std;
+int main(){
+    int arr[]={10,20,30,40,50};
+    int n=5;
+    
+    stack<int> st;
+    // in java - stack<Integer> st= new stack();
+    //Push the data inside a stack 
+    
+    for(int i=0; i<n; i++){
+        st.push(arr[i]);
+        
+    }
+    // Pop out the top most data from the stack 
+     
+    for(int i=0; i<n; i++){
+        arr[i] = st.top();
+        st.pop();
+    }
+    cout<<"reverse array "<<"\n";
+    
+    for(int i=0; i<n; i++){
+        cout<< arr[i]<<" ";
+    }
+    return 0;
+}
